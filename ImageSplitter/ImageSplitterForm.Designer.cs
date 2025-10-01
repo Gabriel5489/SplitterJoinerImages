@@ -166,7 +166,7 @@
             this.Controls.Add(this.pnlRecortarImagenes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ImageSplitterForm";
-            this.Text = "v";
+            this.Text = "División de imagenes por Lote";
             this.pnlRecortarImagenes.ResumeLayout(false);
             this.pnlRecortarImagenes.PerformLayout();
             this.ResumeLayout(false);
