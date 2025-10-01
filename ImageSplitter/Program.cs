@@ -16,7 +16,7 @@ namespace ImageSplitter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ImageJoinerForm());
+            Application.Run(new MainForm());
         }
     }
 }
