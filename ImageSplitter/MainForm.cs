@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace ImageSplitter
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Font = new Font("Segoe UI", 10);
             this.BackColor = Color.FromArgb(220, 230, 250);
+            this.Icon = new Icon("Logo.ico");
 
             InitializeComponentMain();
         }

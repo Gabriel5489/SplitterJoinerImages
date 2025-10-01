@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImageSplitterForm));
             this.txtImagePath = new System.Windows.Forms.TextBox();
             this.btnSeleccionarImagenes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -163,6 +164,7 @@
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.pbrStatus);
             this.Controls.Add(this.pnlRecortarImagenes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ImageSplitterForm";
             this.Text = "v";
             this.pnlRecortarImagenes.ResumeLayout(false);

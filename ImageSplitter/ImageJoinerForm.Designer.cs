@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImageJoinerForm));
             this.pnlRecortarImagenes = new System.Windows.Forms.Panel();
             this.txtImagePath = new System.Windows.Forms.TextBox();
             this.btnProcesar = new System.Windows.Forms.Button();
@@ -163,6 +164,7 @@
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.pbrStatus);
             this.Controls.Add(this.pnlRecortarImagenes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ImageJoinerForm";
             this.Text = "ImageJoinerForm";
             this.pnlRecortarImagenes.ResumeLayout(false);
