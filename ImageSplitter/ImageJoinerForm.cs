@@ -111,6 +111,7 @@ namespace ImageSplitter
                 }
 
                 pbrStatus.Maximum = numberOfOutputFiles;
+                pbrStatus.Value = 0;
 
                 for (int j = 0; j < numberOfOutputFiles; j++)
                 {
@@ -181,6 +182,15 @@ namespace ImageSplitter
                     {
                         maxWidth = img.Width;
                     }
+                }
+
+                if (totalHeight > 50000 || maxWidth > 50000)
+                {
+                    foreach (Image img in images)
+                    {
+                        img.Dispose();
+                    }
+                    throw new Exception("La imagen resultante es demasiado grande y puede causar problemas de memoria. Añada más imagenes de salida hasta que se resuelva.");
                 }
 
                 using (Bitmap finalBitmap = new Bitmap(maxWidth, totalHeight))
