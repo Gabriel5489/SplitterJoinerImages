@@ -80,9 +80,8 @@ namespace ImageSplitter
                 return;
             }
 
-            List<string> sortedImagePaths = sourceImagePaths
-                .OrderBy(p => p)
-                .ToList();
+            List<string> sortedImagePaths = sourceImagePaths;
+            //sortedImagePaths.Sort();
 
             try
             {
